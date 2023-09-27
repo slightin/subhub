@@ -12,9 +12,9 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  schedule:
-    # IMPORTANT: Set cron job in UTC timezone
-    - cron:  '0 */8 * * *'
+  # schedule:
+  #   # IMPORTANT: Set cron job in UTC timezone
+  #   - cron:  '0 */8 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -23,6 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
@@ -31,8 +34,8 @@ jobs:
 
       - name: commit
         run: |
-          git config --global user.email silentmiss@outlook.com
-          git config --global user.name slightin
+          git config --local user.email "silentmiss@outlook.com"
+          git config --local user.name "slightin"
           git add .
           git commit -m "update" -a
           
