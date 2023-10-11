@@ -32,6 +32,13 @@ jobs:
       - run: pip install requests
       - run: python main.py
 
+      - name: check diff
+        run: |
+          diff=`git diff`
+          if ($diff == '')
+          then
+            exit 0
+          fi
       - name: commit
         run: |
           git config --local user.email "silentmiss@outlook.com"
