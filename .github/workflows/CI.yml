@@ -12,9 +12,9 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  # schedule:
-  #   # IMPORTANT: Set cron job in UTC timezone
-  #   - cron:  '0 */8 * * *'
+  schedule:
+    # IMPORTANT: Set cron job in UTC timezone
+    - cron:  '0 */12 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -34,8 +34,8 @@ jobs:
 
       - name: commit
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "silentmiss@outlook.com"
+          git config --local user.name "slightin"
           git add .
           git commit -m "update" -a
           
