@@ -9,12 +9,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
   schedule:
     # IMPORTANT: Set cron job in UTC timezone
-    - cron:  '0 */12 * * *'
+    - cron:  '0 0/12 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
