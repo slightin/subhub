@@ -34,7 +34,7 @@ jobs:
         run: |
           diff=`git diff`
           echo $diff
-          if ($diff != '')
+          if test $diff != ""
           then
             git config --local user.email "silentmiss@outlook.com"
             git config --local user.name "slightin"
