@@ -33,6 +33,7 @@ jobs:
       - name: commit
         run: |
           diff=`git diff`
+          echo $diff
           if ($diff != '')
           then
             git config --local user.email "silentmiss@outlook.com"
