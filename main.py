@@ -8,9 +8,9 @@ headers = {
 }
 
 subtext = requests.get(url=suburl,headers=headers).text
-f=open('亿点连接(github)','w')
-f.write(subtext)
-f.close()
+f1=open('亿点连接(github)','w')
+f1.write(subtext)
+f1.close()
 
 aritext = requests.get(url=ariurl,headers=headers).text
 aritext = re.sub(r"( \-.*steam.*\,)🎯 全球直连",r"\1🔰 节点选择", aritext)
@@ -20,6 +20,6 @@ aritext = re.sub(r"🇦🇨(.*日本)",r"🇯🇵\1", aritext)
 aritext = re.sub(r"🇦🇨(.*台湾)",r"🇹🇼\1", aritext)
 aritext = re.sub(r"🇦🇨(.*英国)",r"🇬🇧\1", aritext)
 aritext = re.sub(r"🇦🇨(.*俄罗斯)",r"🇷🇺\1", aritext)
-f=open('Ari+','w')
-f.write(aritext)
-f.close()
+f2=open('Ari+','w')
+f2.write(aritext)
+f2.close()
