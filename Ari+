@@ -6,6 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: "🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化", server: trans2.acnodeserver.com, port: 20050, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试", server: trans2.acnodeserver.com, port: 20100, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容", server: layer3.acnodeserver.com, port: 58219, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化", server: layer3.acnodeserver.com, port: 50765, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix", server: trans1.acnodeserver.com, port: 21001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
@@ -20,6 +21,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -33,6 +35,7 @@ proxy-groups:
     interval: 300
     proxies:
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -47,6 +50,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -73,6 +77,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -93,6 +98,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -106,6 +112,7 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -120,6 +127,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
@@ -143,6 +151,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇺🇸 [测试]ACFS-US | 美国 | 未必可用 | 保活测试
       - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
       - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
       - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
