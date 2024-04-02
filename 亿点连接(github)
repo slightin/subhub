@@ -16,13 +16,12 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: '🇸🇬新加坡 03｜1x SG', type: vmess, server: cname.volcengine.eu.org, port: 80, uuid: bfcffb3d-3e97-45ba-a353-6cb9ea201988, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso, headers: { Host: sg2-amazonwebservices.tjycdn.online } } }
-    - { name: '🇯🇵日本 04｜1x JP', type: vmess, server: cname.volcengine.eu.org, port: 80, uuid: bfcffb3d-3e97-45ba-a353-6cb9ea201988, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso, headers: { Host: jp3-amazonwebservices.tjycdn.online } } }
     - { name: '🇰🇷韩国 03｜1x KR', type: vmess, server: cname.volcengine.eu.org, port: 80, uuid: bfcffb3d-3e97-45ba-a353-6cb9ea201988, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso, headers: { Host: kr1-amazonwebservices.tjycdn.online } } }
     - { name: '🇰🇷韩国 05｜1x KR', type: vmess, server: cname.volcengine.eu.org, port: 80, uuid: bfcffb3d-3e97-45ba-a353-6cb9ea201988, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso, headers: { Host: kr2-amazonwebservices.tjycdn.online } } }
 proxy-groups:
-    - { name: Netflare, type: select, proxies: [自动选择, 故障转移, '🇸🇬新加坡 03｜1x SG', '🇯🇵日本 04｜1x JP', '🇰🇷韩国 03｜1x KR', '🇰🇷韩国 05｜1x KR'] }
-    - { name: 自动选择, type: url-test, proxies: ['🇸🇬新加坡 03｜1x SG', '🇯🇵日本 04｜1x JP', '🇰🇷韩国 03｜1x KR', '🇰🇷韩国 05｜1x KR'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['🇸🇬新加坡 03｜1x SG', '🇯🇵日本 04｜1x JP', '🇰🇷韩国 03｜1x KR', '🇰🇷韩国 05｜1x KR'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: Netflare, type: select, proxies: [自动选择, 故障转移, '🇸🇬新加坡 03｜1x SG', '🇰🇷韩国 03｜1x KR', '🇰🇷韩国 05｜1x KR'] }
+    - { name: 自动选择, type: url-test, proxies: ['🇸🇬新加坡 03｜1x SG', '🇰🇷韩国 03｜1x KR', '🇰🇷韩国 05｜1x KR'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['🇸🇬新加坡 03｜1x SG', '🇰🇷韩国 03｜1x KR', '🇰🇷韩国 05｜1x KR'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,sub.xn--lmq622c7qjhl4a.com,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,Netflare'
