@@ -5,55 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化", server: boost2.acnodeserver.com, port: 20050, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容", server: layer3.acnodeserver.com, port: 58219, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [高速]JP | 日本大阪 | 深度优化", server: layer3.acnodeserver.com, port: 50765, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix", server: boost1.acnodeserver.com, port: 21001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇷🇺 [高速]RU | 俄罗斯 | 基础优化", server: boost2.acnodeserver.com, port: 35001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix", server: layer3.acnodeserver.com, port: 20100, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等", server: boost1.acnodeserver.com, port: 31001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化", server: boost1.acnodeserver.com, port: 31002, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化", server: boost2.acnodeserver.com, port: 20050, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容", server: layer3.acnodeserver.com, port: 58219, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化", server: layer3.acnodeserver.com, port: 50765, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix", server: boost1.acnodeserver.com, port: 21001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化", server: boost2.acnodeserver.com, port: 35001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix", server: layer3.acnodeserver.com, port: 20100, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等", server: boost1.acnodeserver.com, port: 31001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化", server: boost1.acnodeserver.com, port: 31002, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,61 +72,61 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -142,14 +142,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 [不限流量]USA | 美国洛杉矶 | 基础优化
-      - 🇭🇰 [高速]HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
-      - 🇯🇵 [高速]JP | 日本大阪 | 深度优化
-      - 🇯🇵 [高速]JP2 | 日本东京 | 标准优化 | 支持Netflix
-      - 🇷🇺 [高速]RU | 俄罗斯 | 基础优化
-      - 🇹🇼 [高速]TW | 台湾动态商宽 | 深度优化 | 支持Netflix
-      - 🇬🇧 [高速]UK | 英国 | 标准优化 | 支持HBONow 等
-      - 🇺🇸 [高速]USA | 美国洛杉矶 | 标准优化
+      - 🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化
+      - 🇭🇰 [高速]ACSS-HK | 香港高速 | 深度优化 | 支持Netflix等本地内容
+      - 🇯🇵 [高速]ACSS-JP | 日本大阪 | 深度优化
+      - 🇯🇵 [高速]ACSS-JP2 | 日本东京 | 标准优化 | 支持Netflix
+      - 🇷🇺 [高速]ACSS-RU | 俄罗斯 | 基础优化
+      - 🇹🇼 [高速]ACSS-TW | 台湾动态商宽 | 深度优化 | 支持Netflix
+      - 🇬🇧 [高速]ACSS-UK | 英国 | 标准优化 | 支持HBONow 等
+      - 🇺🇸 [高速]ACSS-USA | 美国洛杉矶 | 标准优化
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
