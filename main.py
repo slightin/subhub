@@ -14,6 +14,7 @@ f1.close()
 
 aritext = requests.get(url=ariurl,headers=headers).text
 aritext = re.sub(r"( \-.*steam.*\,)🎯 全球直连",r"\1🔰 节点选择", aritext)
+aritext = re.sub(r"ACSS-","", aritext)
 aritext = re.sub(r"🇦🇨(.*美国)",r"🇺🇸\1", aritext)
 aritext = re.sub(r"🇦🇨(.*香港)",r"🇭🇰\1", aritext)
 aritext = re.sub(r"🇦🇨(.*日本)",r"🇯🇵\1", aritext)
