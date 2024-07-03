@@ -8,11 +8,11 @@ proxies:
   - {name: "🏳️‍🌈 [不限流量]ACSS-USA | 美国洛杉矶 | 基础优化", server: boost2.acnodeserver.com, port: 20050, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇭🇰 HK | 香港高速 | 深度优化 | 支持Netflix等本地内容", server: layer3.acnodeserver.com, port: 58219, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇯🇵 JP | 日本大阪 | 深度优化", server: layer3.acnodeserver.com, port: 50765, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 JP2 | 日本东京 | 标准优化 | 支持Netflix", server: l2boost.acnodeserver.com, port: 21001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇯🇵 JP2 | 日本东京 | 标准优化 | 支持Netflix", server: bzyh.acnodeserver.com, port: 21001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇷🇺 RU | 俄罗斯 | 基础优化", server: boost2.acnodeserver.com, port: 35001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: "🇹🇼 TW | 台湾动态商宽 | 深度优化 | 支持Netflix", server: layer3.acnodeserver.com, port: 20100, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇬🇧 UK | 英国 | 标准优化 | 支持HBONow 等", server: l2boost.acnodeserver.com, port: 31001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 USA | 美国洛杉矶 | 标准优化", server: l2boost.acnodeserver.com, port: 31002, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇬🇧 UK | 英国 | 标准优化 | 支持HBONow 等", server: bzyh.acnodeserver.com, port: 31001, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇺🇸 USA | 美国洛杉矶 | 标准优化", server: bzyh.acnodeserver.com, port: 31002, type: vmess, uuid: 34cc80dd-ebb5-36b7-93ba-1fb4186ad420, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
