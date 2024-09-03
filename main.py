@@ -1,7 +1,7 @@
 import requests
 import re
 
-suburl="https://sub.xn--lmq622c7qjhl4a.com/api/v1/client/subscribe?token=e4b320e9f72ee607a3c2af21cc3e4423"
+suburl="https://sub.netflare.xyz/api/v1/client/subscribe?token=e4b320e9f72ee607a3c2af21cc3e4423"
 ariurl="https://suo.yt/TsYctUa"
 headers = {
     "User-Agent": "ClashforWindows/0.20.39"
