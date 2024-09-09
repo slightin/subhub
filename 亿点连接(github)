@@ -15,8 +15,8 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '🇸🇬新加坡 03｜1x SG', type: trojan, server: 13.229.248.20, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-sg1-light.dnscloud.us.kg } }, sni: network-sg1-light.dnscloud.us.kg }
-    - { name: '🇸🇬新加坡 04｜1x SG', type: trojan, server: 13.229.248.20, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-sg1-light.dnscloud.us.kg } }, sni: network-sg1-light.dnscloud.us.kg }
+    - { name: '🇸🇬新加坡 03｜1x SG', type: trojan, server: 13.213.54.207, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-sg1-light.dnscloud.us.kg } }, sni: network-sg1-light.dnscloud.us.kg }
+    - { name: '🇸🇬新加坡 04｜1x SG', type: trojan, server: 13.213.54.207, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-sg1-light.dnscloud.us.kg } }, sni: network-sg1-light.dnscloud.us.kg }
     - { name: '🇺🇸美国 02｜1x US', type: trojan, server: 34.220.92.49, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-us1-light.dnscloud.us.kg } }, sni: network-us1-light.dnscloud.us.kg }
 proxy-groups:
     - { name: Netflare, type: select, proxies: [自动选择, 故障转移, '🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG', '🇺🇸美国 02｜1x US'] }
