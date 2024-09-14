@@ -17,11 +17,10 @@ dns:
 proxies:
     - { name: '🇸🇬新加坡 03｜1x SG', type: trojan, server: 54.169.163.171, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-sg1-light.dnscloud.us.kg } }, sni: network-sg1-light.dnscloud.us.kg }
     - { name: '🇸🇬新加坡 04｜1x SG', type: trojan, server: 54.169.163.171, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-sg1-light.dnscloud.us.kg } }, sni: network-sg1-light.dnscloud.us.kg }
-    - { name: '🇺🇸美国 02｜1x US', type: trojan, server: 35.91.213.130, port: 443, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, network: ws, ws-opts: { path: cdn, headers: { Host: network-us1-light.dnscloud.us.kg } }, sni: network-us1-light.dnscloud.us.kg }
 proxy-groups:
-    - { name: Netflare, type: select, proxies: [自动选择, 故障转移, '🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG', '🇺🇸美国 02｜1x US'] }
-    - { name: 自动选择, type: url-test, proxies: ['🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG', '🇺🇸美国 02｜1x US'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG', '🇺🇸美国 02｜1x US'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: Netflare, type: select, proxies: [自动选择, 故障转移, '🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG'] }
+    - { name: 自动选择, type: url-test, proxies: ['🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['🇸🇬新加坡 03｜1x SG', '🇸🇬新加坡 04｜1x SG'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'DOMAIN,sub.netflare.xyz,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,Netflare'
