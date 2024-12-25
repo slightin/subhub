@@ -17,11 +17,11 @@ dns:
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: '🇸🇬 新加坡 01｜1x SG', type: trojan, server: cdn.cdndata.xyz, port: 30001, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
-    - { name: '🇸🇬 新加坡 03｜1x SG', type: trojan, server: cdn.cdndata.xyz, port: 30003, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
-    - { name: '🇸🇬 新加坡 04｜1x SG', type: trojan, server: cdn.cdndata.xyz, port: 30004, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
+    - { name: '🇸🇬 新加坡 03｜1x SG', type: trojan, server: cdn2.cdndata.xyz, port: 30003, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
+    - { name: '🇸🇬 新加坡 04｜1x SG', type: trojan, server: cdn2.cdndata.xyz, port: 30004, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
     - { name: '🇰🇷 韩国 01｜1x KR', type: trojan, server: cdn.cdndata.xyz, port: 30021, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
-    - { name: '🇰🇷 韩国 03｜1x KR', type: trojan, server: cdn.cdndata.xyz, port: 30023, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
-    - { name: '🇰🇷 韩国 04｜1x KR', type: trojan, server: cdn.cdndata.xyz, port: 30024, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
+    - { name: '🇰🇷 韩国 03｜1x KR', type: trojan, server: cdn2.cdndata.xyz, port: 30023, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
+    - { name: '🇰🇷 韩国 04｜1x KR', type: trojan, server: cdn2.cdndata.xyz, port: 30024, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
 proxy-groups:
     - { name: Meco Network, type: select, proxies: [自动选择, 故障转移, '🇸🇬 新加坡 01｜1x SG', '🇸🇬 新加坡 03｜1x SG', '🇸🇬 新加坡 04｜1x SG', '🇰🇷 韩国 01｜1x KR', '🇰🇷 韩国 03｜1x KR', '🇰🇷 韩国 04｜1x KR'] }
     - { name: 自动选择, type: url-test, proxies: ['🇸🇬 新加坡 01｜1x SG', '🇸🇬 新加坡 03｜1x SG', '🇸🇬 新加坡 04｜1x SG', '🇰🇷 韩国 01｜1x KR', '🇰🇷 韩国 03｜1x KR', '🇰🇷 韩国 04｜1x KR'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
