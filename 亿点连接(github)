@@ -13,7 +13,7 @@ dns:
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
+    fallback: ['https://dns.alidns.com/dns-query', 'https://dudns.baidu.com/dns-query', 'https://dns.114dns.com/dns-query', 'https://dns.tencent.com/dns-query']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: '🇸🇬 新加坡 03｜1x SG', type: trojan, server: network-sg3-light.network-data.xyz, port: 30013, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
