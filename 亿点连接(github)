@@ -8,13 +8,15 @@ unified-delay: true
 dns:
     enable: true
     ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
+    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://dns.alidns.com/dns-query', 'https://dudns.baidu.com/dns-query', 'https://dns.114dns.com/dns-query', 'https://dns.tencent.com/dns-query']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+    respect-rules: true
+    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    fallback: [1.1.1.1, 8.8.8.8]
+    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
     - { name: '🇸🇬 新加坡 03｜1x SG', type: trojan, server: network-sg3-light.network-data.xyz, port: 30013, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
     - { name: '🇸🇬 新加坡 04｜1x SG', type: trojan, server: network-sg4-light.network-data.xyz, port: 30014, password: bfcffb3d-3e97-45ba-a353-6cb9ea201988, udp: true, sni: tencent-1330445418.cos.ap-guangzhou.myqcloud.com }
@@ -32,7 +34,8 @@ proxy-groups:
     - { name: 自动选择, type: url-test, proxies: ['🇸🇬 新加坡 03｜1x SG', '🇸🇬 新加坡 04｜1x SG', '🇯🇵 日本 01｜1x JP', '🇯🇵 日本 02｜1x JP', '🇯🇵 日本 03｜1x JP', '🇯🇵 日本 04｜1x JP', '🇰🇷 韩国 01｜1x KR', '🇰🇷 韩国 03｜1x KR', '🇺🇸 美国 01｜1x US', '🇺🇸 美国 03｜1x US', '🇸🇪 瑞典 01｜1x SE'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
     - { name: 故障转移, type: fallback, proxies: ['🇸🇬 新加坡 03｜1x SG', '🇸🇬 新加坡 04｜1x SG', '🇯🇵 日本 01｜1x JP', '🇯🇵 日本 02｜1x JP', '🇯🇵 日本 03｜1x JP', '🇯🇵 日本 04｜1x JP', '🇰🇷 韩国 01｜1x KR', '🇰🇷 韩国 03｜1x KR', '🇺🇸 美国 01｜1x US', '🇺🇸 美国 03｜1x US', '🇸🇪 瑞典 01｜1x SE'], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'DOMAIN,127.0.0.1:6600,DIRECT'
+    - 'IP-CIDR,1.1.1.1/32,Meco Network,no-resolve'
+    - 'IP-CIDR,8.8.8.8/32,Meco Network,no-resolve'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,Meco Network'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Meco Network'
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
